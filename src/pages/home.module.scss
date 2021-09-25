@@ -1,0 +1,97 @@
+.contentContainer {
+	width: 100%;
+	height: calc(100vh);
+    
+}
+
+.slider {
+    width: 100%;
+    height: 50%;
+    background-image: url('../../public/images/pray.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 30s infinite;
+    
+    @keyframes slide {
+        0% {
+            background-image: url('../../public/images/pray.jpeg');
+        }
+
+        33% {
+            background-image: url('../../public/images/hand.jpg');
+        }
+
+        66% {
+            background-image: url('../../public/images/adore.jpeg');
+        }
+
+        99% {
+            background-image: url('../../public/images/hand.jpeg');
+            background-position: center center;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: end;
+    background-color: #fdfdfd;
+
+
+    h1 {
+        color: #2f2f2f;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
+    
+}
+
+.about {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        align-items: center;
+        color: #ffffff;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+    }
+
+    p {
+        width: 15rem;
+    }
+    
+}
+
+.map {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        align-items: center;
+        color: #ffffff;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        width: 15rem;
+    }
+    
+}
