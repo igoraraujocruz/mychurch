@@ -1,7 +1,11 @@
 .contentContainer {
 	width: 100%;
 	height: calc(100vh);
-    
+    background: #614385;
+	background: -webkit-linear-gradient(to right, #516395, #614385);
+	background: linear-gradient(to right, #516395, #614385);
+    overflow-x: hidden;
+
 }
 
 .slider {
@@ -32,66 +36,142 @@
     }
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: end;
-    background-color: #fdfdfd;
 
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(53, 53, 53);
+    flex-wrap: wrap;
+    padding: 5rem;
+    word-break: break-word;
+    box-shadow: 10px 100px 10px rgba(0, 0, 0, 1);
+
+    div {
+        transition: color 0.5s;
+        width: 15rem;
+        font-weight: 700;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    .network {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        section {
+            display: flex;
+            padding: 1rem;
+
+            .yt {
+                margin-top: -0.45rem;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+
+
+            .insta {
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+
+            .face {
+                margin-top: -0.15rem;
+                cursor: pointer;
+            }
+        }
+    }
+    
+
+    @media(max-width: 600px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        div {
+            & + div {
+                margin-top: 2rem;
+            }
+        }
+    }
 
     h1 {
-        color: #2f2f2f;
-        font-family: 'PT Sans', sans-serif;
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+.googleMaps {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background: #614385;
+	background: -webkit-linear-gradient(to right, #516395, #614385);
+	background: linear-gradient(to right, #516395, #614385);
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        box-shadow: 0 5px 0 10px rgba(0, 0, 0, 0.8);
+
+        p:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        section {
+            font-size: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.groups {
+    min-height: 100vh;
+    background-image: url('../../public/images/pray.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #000;
+        background-color: rgba(255, 255, 255, .8);
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, .8);
+    }
+
+    section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-weight: 700;
         font-size: 1.5rem;
-        line-height: 2rem;
-        font-weight: 700;
+        color: #000;
+        background-color: rgba(255, 255, 255, .8);
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, .8);
+
+        img {
+            background-size: cover;
+        }
     }
-    
-}
-
-.about {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    h1 {
-        align-items: center;
-        color: #ffffff;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 4.5rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-    }
-
-    p {
-        width: 15rem;
-    }
-    
-}
-
-.map {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    h1 {
-        align-items: center;
-        color: #ffffff;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 4.5rem;
-        line-height: 4.5rem;
-        font-weight: 700;
-    }
-
-    p {
-        width: 15rem;
-    }
-    
 }
